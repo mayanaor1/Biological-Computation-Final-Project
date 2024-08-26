@@ -35,27 +35,57 @@ When you run the program, the output is presented in two main parts: the console
 
 ### Console Output
 
-The console will display information about the number of monotonic functions and their binary representations. For example:
+The console will display information about the number of monotonic functions and their binary representations:
 
 
 ```plaintext
-Number of monotonic functions: 3
-Monotonic Function 1: [0, 1, 1, 0, 1, 1, 0, 1, 1]
-Monotonic Function 2: [1, 1, 0, 1, 1, 1, 0, 1, 0]
-Monotonic Function 3: [0, 0, 1, 0, 1, 1, 1, 1, 1]
+Number of monotonic functions: 18
+Monotonic Function 1: [0, 0, 1, 0, 0, 0, 0, 0, 0]
+Monotonic Function 2: [0, 1, 1, 0, 0, 0, 0, 0, 0]
+Monotonic Function 3: [1, 1, 1, 0, 0, 0, 0, 0, 0]
+Monotonic Function 4: [0, 0, 1, 0, 0, 1, 0, 0, 0]
+Monotonic Function 5: [0, 1, 1, 0, 0, 1, 0, 0, 0]
+Monotonic Function 6: [1, 1, 1, 0, 0, 1, 0, 0, 0]
+Monotonic Function 7: [0, 1, 1, 0, 1, 1, 0, 0, 0]
+Monotonic Function 8: [1, 1, 1, 0, 1, 1, 0, 0, 0]
+Monotonic Function 9: [1, 1, 1, 1, 1, 1, 0, 0, 0]
+Monotonic Function 10: [0, 0, 1, 0, 0, 1, 0, 0, 1]
+Monotonic Function 11: [0, 1, 1, 0, 0, 1, 0, 0, 1]
+Monotonic Function 12: [1, 1, 1, 0, 0, 1, 0, 0, 1]
+Monotonic Function 13: [0, 1, 1, 0, 1, 1, 0, 0, 1]
+Monotonic Function 14: [1, 1, 1, 0, 1, 1, 0, 0, 1]
+Monotonic Function 15: [1, 1, 1, 1, 1, 1, 0, 0, 1]
+Monotonic Function 16: [0, 1, 1, 0, 1, 1, 0, 1, 1]
+Monotonic Function 17: [1, 1, 1, 0, 1, 1, 0, 1, 1]
+Monotonic Function 18: [1, 1, 1, 1, 1, 1, 0, 1, 1]
+
+
 ```
 
 ### Tkinter GUI
 
 The Tkinter GUI will open and display a table where each row represents a monotonic function. The columns include the function label and the values for each configuration.
 
-Example table layout:
-
 | Function             | (0,0,0,0) | (1,0,0,0) | (1,1,0,0) | (0,0,1,0) | (1,0,1,0) | (1,1,1,0) | (0,0,1,1) | (1,0,1,1) | (1,1,1,1) |
 |----------------------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-| Monotonic Function 1 | 0         | 1         | 1         | 0         | 1         | 1         | 0         | 1         | 1         |
-| Monotonic Function 2 | 1         | 1         | 0         | 1         | 1         | 1         | 0         | 1         | 0         |
-| Monotonic Function 3 | 0         | 0         | 1         | 0         | 1         | 1         | 1         | 1         | 1         |
+| Monotonic Function 1 | 0         | 0         | 1         | 0         | 0         | 0         | 0         | 0         | 0         |
+| Monotonic Function 2 | 0         | 0         | 1         | 0         | 0         | 0         | 0         | 0         | 0         |
+| Monotonic Function 3 | 1         | 1         | 1         | 0         | 0         | 0         | 0         | 0         | 0         |
+| Monotonic Function 4 | 0         | 0         | 1         | 0         | 0         | 0         | 0         | 0         | 0         |
+| Monotonic Function 5 | 0         | 1         | 1         | 0         | 0         | 1         | 0         | 0         | 0         |
+| Monotonic Function 6 | 1         | 1         | 1         | 0         | 0         | 1         | 0         | 0         | 0         |
+| Monotonic Function 7 | 0         | 1         | 1         | 0         | 1         | 1         | 0         | 0         | 0         |
+| Monotonic Function 8 | 1         | 1         | 1         | 0         | 1         | 1         | 0         | 0         | 0         |
+| Monotonic Function 9 | 1         | 1         | 1         | 1         | 1         | 1         | 0         | 0         | 0         |
+| Monotonic Function 10| 0         | 1         | 1         | 0         | 1         | 1         | 0         | 0         | 1         |
+| Monotonic Function 11| 1         | 1         | 1         | 0         | 1         | 1         | 0         | 0         | 1         |
+| Monotonic Function 12| 0         | 1         | 1         | 0         | 1         | 1         | 0         | 1         | 1         |
+| Monotonic Function 13| 1         | 1         | 1         | 0         | 1         | 1         | 0         | 1         | 1         |
+| Monotonic Function 14| 0         | 1         | 1         | 1         | 1         | 1         | 0         | 1         | 1         |
+| Monotonic Function 15| 1         | 1         | 1         | 1         | 1         | 1         | 0         | 1         | 1         |
+| Monotonic Function 16| 0         | 1         | 1         | 0         | 1         | 1         | 0         | 1         | 1         |
+| Monotonic Function 17| 1         | 1         | 1         | 0         | 1         | 1         | 0         | 1         | 1         |
+| Monotonic Function 18| 1         | 1         | 1         | 1         | 1         | 1         | 0         | 1         | 1         |
 
 Each row corresponds to a different monotonic function with its binary values for each configuration.
 
