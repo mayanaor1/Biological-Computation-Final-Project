@@ -3,14 +3,6 @@
 
 This Python program identifies monotonic functions based on a set of configurations and displays the results using a graphical table. Monotonic functions are those where the output does not decrease as the inputs increase, based on a specific set of criteria.
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Output](#output)
-
 ## Overview
 
 The program evaluates all possible binary functions for a given set of configurations and determines which ones meet the monotonicity requirement. A function is considered monotonic if its output values do not decrease as the input values increase according to the specified conditions.
@@ -35,28 +27,7 @@ Ensure you have Python 3.x installed. You will also need the following libraries
 - `termcolor` for colored terminal output.
 - `tkinter` for GUI elements (usually included with Python).
 
-## Installation
 
-1. **Install Python Libraries:**
-
-   Install the required Python libraries using `pip`:
-
-   ```bash
-   pip install pandas tabulate termcolor
-
-
-## Usage
-
-1. **Save the Code:**
-
-   Save the provided Python script into a file named `monotonic_function_finder.py`.
-
-2. **Run the Program:**
-
-   Execute the script using Python from your command line or terminal:
-
-   ```bash
-   python monotonic_function_finder.py
 
 ## Output
 
