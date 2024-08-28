@@ -45,7 +45,7 @@ Cell colors are customized:
   
 ### 6. Execution
 
-- The program runs a Tkinter event loop to keep the GUI open, allowing users to view the table of monotonic functions.
+- The program is designed to be run in a Jupyter Notebook for viewing the styled DataFrame.
 
 ## Requirements
 
