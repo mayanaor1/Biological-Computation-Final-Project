@@ -34,12 +34,15 @@ The program checks whether each generated Boolean function is monotonic. A funct
 
 - It prepares a table where each row represents a monotonic function, showing its output for each configuration.
 
-### 5. GUI Display
+### 5. Jupyter Notebook Display
 
-- Using Tkinter, the program creates a simple graphical user interface (GUI) to display the monotonic functions in a table format.
+The program uses pandas to create a DataFrame and displays it with custom styling in a Jupyter Notebook.
 
-- A `Treeview` widget is used to organize and display the table with configurations as column headers.
+Cell colors are customized:
 
+- Cells with a value of 1 are colored red.
+- Cells with a value of 0 are colored white.
+  
 ### 6. Execution
 
 - The program runs a Tkinter event loop to keep the GUI open, allowing users to view the table of monotonic functions.
@@ -48,18 +51,11 @@ The program checks whether each generated Boolean function is monotonic. A funct
 
 Ensure you have Python 3.x installed. You will also need the following libraries:
 
-- `pandas` for data manipulation.
-- `tabulate` for tabular data formatting.
-- `termcolor` for colored terminal output.
-- `tkinter` for GUI elements (usually included with Python).
-
+- pandas for data manipulation.
+- jinja2 for rendering styled DataFrames in Jupyter Notebook.
 
 
 ## Output
-
-When you run the program, the output is presented in two main parts: the console output and the Tkinter GUI.
-
-### Console Output
 
 The console will display information about the number of monotonic functions and their binary representations:
 
@@ -89,9 +85,12 @@ Monotonic Function 18: [1, 1, 1, 1, 1, 1, 0, 1, 1]
 
 ```
 
-### Tkinter GUI
 
-The Tkinter GUI will open and display a table where each row represents a monotonic function. The columns include the function label and the values for each configuration.
+the program is also outputs a styled DataFrame with the following features:
+
+- Red Cells: Cells containing the value 1.
+- White Cells: Cells containing the value 0.
+- Yellow Borders: Continuous borders around the columns (1, 1, 0, 0) and (0, 0, 1, 1).
 
 | Function   | (0,0,0,0) | (1,0,0,0) | (1,1,0,0) | (0,0,1,0) | (1,0,1,0) | (1,1,1,0) | (0,0,1,1) | (1,0,1,1) | (1,1,1,1) |
 |------------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
